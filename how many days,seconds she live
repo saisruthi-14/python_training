@@ -1,0 +1,13 @@
+calculate how many days she live
+
+from datetime import date
+a=date(2005,11,14)
+b=date(2026,4,28)
+print("No of days she live",(b-a))
+
+calculate how many seconds she live
+
+from datetime import date
+a=date(2005,11,14)
+b=date(2026,4,28)
+print("No of days she live",(b-a).total_seconds())
