@@ -1,0 +1,14 @@
+Dependent loop
+a=2
+for i in range(2,5):
+  a=a+2
+  for j in range(4):
+    a=a+3
+  print(a)
+Independent loop
+a=10
+for i in range(4):
+  for j in range(i+1):
+    a=a+i
+  print("ACE")
+print(a)
