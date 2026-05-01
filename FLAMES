@@ -6,7 +6,7 @@ for i in range(len(a1)):
   for j in range(len(b1)):
     if a1[i]==b1[j]:
       a1[i]='2'
-      b1[i]='2'
+      b1[j]='2'
 print(a1)
 print(b1)
 cnt=0
