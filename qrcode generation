@@ -1,0 +1,9 @@
+pip install qrcode
+import qrcode
+qr=qrcode.QRCode()
+a="Palle Sai Sruthi"
+qr.add_data(a)
+qr.make(fit=True)
+res=qr.make_image(fill_color="black",back_color="white")
+res.save("sruthi.png")
+print("created qrcode sruthi")
