@@ -1,0 +1,14 @@
+math = ['raj', 'anu', 'pavi', 'bala','kiran']
+political = ['raj', 'peter', 'ken', 'meera','bala']
+social = ['raj', 'mohan', 'ben', 'meera','anu']
+m=set(math)
+p=set(political)
+s=set(social)
+# 3 subjects
+all_sub=m&p&s
+# 2 subjects
+two_sub=((m&p)|(m&s)|(p&s))-(m&p&s)
+one_sub=(m|p|s)-(two_sub|all_sub)
+print(list(one_sub))
+print(list(two_sub))
+print(list(all_sub))
