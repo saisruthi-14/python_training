@@ -1,0 +1,14 @@
+import heapq
+a=[10,12,23,45,67,89,7,90,14]
+res=[]
+heapq.heappush(res,-10)
+heapq.heappush(res,-12)
+heapq.heappush(res,-23)
+heapq.heappush(res,-45)
+heapq.heappush(res,-67)
+heapq.heappush(res,-89)
+heapq.heappush(res,-7)
+heapq.heappush(res,-90)
+heapq.heappush(res,-14)
+x=[-i for i in res]
+print(x)
