@@ -1,0 +1,7 @@
+from tabulate import tabulate
+title=["Name","Age","Dept"]
+data=[["Raj",19,"CSE"],["Sruthi",20,"CSM"],["Sai",21,"IT"],["SaiSruthi",18,"CSD"]]
+res=tabulate(data,headers=title,tablefmt="pretty")
+with open("Sruthi.txt",'w') as file:
+  file.write(res)
+print("Done")
